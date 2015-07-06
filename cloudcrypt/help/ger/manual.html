@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="de-DE">
+    <meta charset="UTF-8">
+    <meta name="author" content="Kevin" >
+    <link rel="stylesheet" href="../style.css">
+    <title>CloudCrypt - Bedienungsanleitung</title>
+</head>
+<body>
+    <div id="wrap">
+
+    <div id="content">
+
+        <div class="header">
+            <img class="logo" alt="Logo" src="../Logo_v2.png">
+        </div>
+
+        <div class="middle">
+            <h2>Bedienungsanleitung</h2>
+
+<h3>Allgemeine Bedienung der Oberfl&auml;che</h3>
+
+<p>Nachdem sie die Software gestartet haben, sollte sich das folgende Fenster 
+&ouml;ffnen:</p>
+<img src="pics/pic_complete_window.png" alt="Komplettes Fenster">
+<p>In dem Tab <i>Einstellungen</i> k&ouml;nnen sie in der ersten Zeile jenes 
+Verzeichnis ausw&auml;hlen, welches ihre Dateien im Klartext enth&auml;lt.
+Sie sollten darauf achten, dass sie vorher ein neues Verzeichnis zu diesem Zwecke anlegen 
+und auch nur dieses ausw&auml;hlen, da die Auswahl einer sehr hohen Verzeichnisses 
+in der Verzeichnisstruktur das verschl&uuml;sseln von sehr vielen Daten und deren
+Synchronisation mit der Cloud zur Folge hat, was aber unter Umst&auml;nden nicht 
+beabsichtigt wird.</p><img src="pics/pic_button_choose.png" alt="Auswahl">
+<p>In der Zeile darunter kann man das lokale Verzeichnis der Cloud ausw&auml;hlen. 
+Hierhin werden die Dateien verschl&uuml;sselt abgelegt und dann hochgeladen. Bitte 
+beachten sie, dass die Dateien nat&uuml;rlich nur hochgeladen werden, wenn sie das
+korrekte Verzeichnis der Cloud ausgew&auml;hlt haben.</p>
+<p>In den zwei folgenden Zeilen geben sie ihr Passwort ein. Ist das Passwort zu 
+kurz oder stimmen sie nicht &uuml;berein, so werden diese Felder rot markiert. 
+Ist das Passwort g&uuml;ltig, so ist das Feld gr&uuml;n.</p>
+<img src="pics/pic_passwords_correct.png" alt="Passwort korrekt">
+<p>Mit den Buttons <img src="pics/pic_button_show.png" alt="Anzeigen">
+jeweils rechts von den Feldern k&ouml;nnen sie sich das eingegebene Passwort anzeigen 
+lassen. Allerdings wird das Passwort nur angezeigt, solange sie den jeweiligen 
+Button anklicken.</p>
+<p>Mittels anklicken der Checkbox <img src="pics/pic_show_tooltips.png" alt="Tooltips anzeigen"> 
+k&ouml;nnen sie sich zu den meisten Elementen der Oberfl&auml;chen kurze 
+Erkl&auml;rungen anzeigen lassen. Diese sind sichtbar, wenn man mit dem 
+Mauszeiger &uuml;ber das betreffende Element f&auml;hrt und ihn dort einige 
+Sekunden ruhen l&auml;sst.</p>
+<p>Durch setzen von <img src="pics/pic_show_advtab.png" alt="Erweiterte Einstellungen anzeigen"> wird ein weiterer 
+Tab eingeblendet. In diesem lassen sich viele Einstellungen der Software manuell 
+&auml;ndern, l&ouml;schen und zur&uuml;cksetzen.</p>
+<table><tr>
+<th style="width: 34px">
+<img src="pics/pic_sign_warning.png" alt="Warnung" style="height: 50px; width: auto"></th>
+<td><b>VORSICHT: Durch das &Auml;ndern dieser Einstellungen k&ouml;nnen sie die 
+Einsatzf&auml;higkeit der Software einschr&auml;nken oder ihre verschl&uuml;sselten 
+Daten eventuell nicht mehr lesen. Es gibt f&uuml;r normale User generell keinen Grund
+Einstellungen manuell zu editieren.</b></td>
+</tr></table>
+<p>Im Tab <i>Einstellungen</i> gibt es einen Button namens 
+<img src="pics/pic_button_write_config.png" alt="Konfig schreiben">.
+Mit diesem Button k&ouml;nnen sie die Konfiguration neu schreiben, falls sie 
+diese ge&auml;ndert haben. Ansonsten wird die Datei auch geschrieben, wenn sie 
+die Synchronisation starten oder das Programm normal beenden.</p>
+<p>Mit Hilfe des Sliders rechts unten k&ouml;nnen sie die Synchronisation starten
+oder wieder anhalten (sofern alle notwendigen Einstellungen getroffen wurden).
+Beim Starten der Software wird begonnen, ihre Dateien aus dem Ursprungsverzeichnis 
+zu verschl&uuml;sseln und diese in den Cloud-Ordner zu kopieren. Anschlie&szlig;end 
+geschiet dieser Vorgang r&uuml;ckw&auml;rts, um auch neue Dateien aus der Cloud 
+in den lokalen Ordner zu kopieren. Falls die entsprechende Datei inm jeweils anderen 
+Ordner bereits existiert, werden die Dateien nur dann kopiert, wenn 
+der letzte Bearbeitungszeitpunkt der Datei nach dem der jeweils anderen liegt 
+(also neuer ist). Dieser gesamte Vorgang wird alle 30 Sekunden wiederholt, solange
+die Software l&auml;ft und gestartet wurde.</p>
+<p><b>Bitte beachten sie:</b> Der tats&auml;chliche Zeitpunkt des Hochladens ihrer 
+Dateien in die Cloud ist von uns nicht beeinflussbar und h&auml;ngt in der Regel 
+von verschiedensten Faktoren ab. CloudCrypt kopiert nur die Dateien in das 
+Zielverzeichnis.</p>
+<p>Ganz unten im Fenster befindet sich noch ein Bereich, in dem eventuelle Fehler 
+oder sonstige Hinweise angezeigt werden. Diese wird sie beispielsweise dar&uuml;ber 
+informieren, falls ihre beiden Passw&ouml;rter nicht &uuml;bereinstimmen.</p>
+<img src="pics/pic_message_area.png" alt="Message Area">
+
+<h3>Wichtige Hinweise</h3>
+
+<table><tr>
+<th style="width: 34px">
+<img src="pics/pic_sign_warning.png" alt="Warnung" style="height: 50px; width: auto"></th>
+<td>Wenn sie unverschl&uuml;sselte Daten in der Cloud ablegen wollen, so m&uuml;ssen 
+sie dies manuell tun. Sie sollten jedoch hierf&uuml;r ein eigenes Verzeichnis in
+der Cloud anlegen, da CloudCrypt unverschl&uuml;sselte Daten im Cloud-Ordner 
+grunds&auml;tzlich ignoriert.</td>
+</tr></table>
+<br>
+<table><tr>
+<th style="width: 34px">
+<img src="pics/pic_sign_warning.png" alt="Warnung" style="height: 50px; width: auto"></th>
+<td>Sie sollten grunds&auml;tzlich nicht manuell an den Dateien der Software 
+herummanipulieren. Dies kann im schlimmsten Fall dazu f&uuml;hren, dass die 
+Software nicht mehr funktioniert oder ihre Daten nicht mehr lesbar sind. 
+Ver&auml;ndern sie daher die Dateien der Software nicht und machen sie regelm&auml;&szlig;e 
+Backups ihrer Daten.</td>
+</tr></table>
+<br>
+<table><tr>
+<th style="width: 34px">
+<img src="pics/pic_sign_warning.png" alt="Warnung" style="height: 50px; width: auto"></th>
+<td>Um die Software auf einem anderen Rechner zu nutzen, sollten sie nach dem erstmaligen 
+Benutzen der Software auf ihrem Prim&auml;rger&auml;t einfach den gesamten Ordner 
+von CloudCrypt auf das zweite Ger&auml;t kopieren und dort die Ordnerpfade anpassen. 
+Dadurch ist sichergestellt, dass ihre Daten auch auf dem anderen Ger&auml;t lesbar 
+sind und ihr Passwort das gleiche bleibt.</td>
+</tr></table>
+
+        </div>
+
+       <div class="right">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="introduction.html">Einleitung</a></li>
+                <li><a href="#" class="current">Bedienungsanleitung</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="license.html">Lizenz</a></li>
+            </ul>
+        </div>
+
+    <div id="clear"></div>
+
+    </div>
+
+
+
+    </div>
+
+    <div id="footer">
+        Design by Kevin Kirchner and <a href="http://www.minimalistic-design.net">Minimalistic Design</a>
+    </div>
+</body>
+</html>

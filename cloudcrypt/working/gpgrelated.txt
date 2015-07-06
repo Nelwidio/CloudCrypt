@@ -1,0 +1,60 @@
+# hier werden codeschnipsel gesammelt, die von gpg ?brig geblieben sind
+
+self.settingstab_label_gpg = None
+self.settingstab_input_gpg = None
+self.settingstab_button_gpg = None
+
+self.setup_advanced_settings_tab()
+self.maintabwidget.addTab(self.advtab,
+self.translator.get_text('advanced_title'))
+
+# setup the key management tab
+self.setup_key_mgmt_tab()
+self.maintabwidget.addTab(self.keytab, self.translator.get_text('key_title'))
+
+# set up the label for the gpg keyring location
+self.settingstab_label_gpg = QtWidgets.QLabel(self.settingstab)
+self.settingstab_label_gpg.setObjectName('settings_tab_label_gpg')
+self.settingstab_label_gpg.setText(self.translator.get_text(self.settingstab_label_gpg.objectName()))
+# gpg input
+self.settingstab_input_gpg = QtWidgets.QLineEdit(self.settingstab)
+self.settingstab_input_gpg.setObjectName('settings_tab_input_gpg')
+if self.settingstab_input_gpg.objectName() in self.config:
+    self.settingstab_input_gpg.setText(self.config[self.settingstab_input_gpg.objectName()])
+    self.settingstab_input_gpg.setReadOnly(self.settingstab_input_editable)
+# gpg button
+self.settingstab_button_gpg = QtWidgets.QPushButton(self.settingstab)
+self.settingstab_button_gpg.setObjectName('settings_tab_button_gpg')
+self.settingstab_button_gpg.setText(self.translator.get_text(self.settingstab_button_gpg.objectName()))
+self.settingstab_button_gpg.clicked.connect(self.browse_keyring)
+self.settingstab_button_gpg.clicked.connece(self.write_config(self.settingstab_input_gpg.text())) # TODO
+
+# buddy realations
+self.settingstab_label_gpg.setBuddy(self.settingstab_input_gpg)
+
+self.tooltips.append(self.settingstab_label_gpg)
+self.tooltips.append(self.settingstab_button_gpg)
+self.tooltips.append(self.settingstab_input_gpg)
+
+def browse_keyring(self):
+        """
+        Opens a file browser to select the keyring-file and
+        sets the QEditLine according to the selection.
+
+        :return: None
+        """
+        filename, _ = \
+            QtWidgets.QFileDialog.getOpenFileName(
+                self,
+                self.translator.get_text('settings_tab_button_gpg_desc'),
+                self.settingstab_input_gpg.text(),
+                "GPG (*.gpg)")
+
+        if filename:
+            self.settingstab_input_gpg.setText(str(filename))
+
+def get_gpg_path(self):
+        if self.settingstab_input_gpg == "":
+            return None
+        else:
+            self.settingstab_input_gpg.text()

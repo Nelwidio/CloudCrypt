@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+
+#content {
+    margin-left: 5em;
+    margin-top: 5em;
+}
+
+p {
+	font-weight: bold;
+	color: #88CCFF;
+	text-shadow: -1px 1px 8px #3366AA, 1px -1px 8px #3366EE;
+    margin-top: 1.5em;
+}
+
+p.blink {
+	animation: blinker steps(1) 1s infinite;	
+}
+
+@keyframes blinker {
+	0% { visibility: visible; }
+	50% { visibility: hidden; }
+	100% { visibility: visible; }
+}

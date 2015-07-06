@@ -1,0 +1,163 @@
+# the title of the main window
+title = CloudCrypt
+
+# the labels of the tabs
+settings_title = Einstellungen
+advanced_title = Erweiterte Einstellungen
+key_title = Schlüsselverwaltung
+user_title = Benutzer und Gruppenverwaltung
+exit_cloudcrypt = Wollen Sie CloudCrypt wirklich beenden?
+writing_config = Schreibe Konfiguration in Konfigurationsdatei...
+password_1_policy_violation = Das erste Passwort genügt nicht den Sicherheitsanforderungen.
+password_2_policy_violation = Das zweite Passwort genügt nicht den Sicherheitsanforderungen.
+
+# the settings tab
+
+    # labels
+    settab_label_clear = Klartext Verzeichnis
+    settab_label_enc = Verschlüsseltes Verzeichnis
+    settab_label_gpg = GPG Schlüsselbund
+    settab_label_key1 = Passwort
+    settab_label_key2 = Passwort Bestätigen
+
+    # label tooltips
+    settab_label_clear_tooltip = Wählen Sie hier das Verzeichnis aus, in dem Sie Ihre Dateien ablegen um diese dann automatisch verschlüsseln und hochladen zu lassen.
+    settab_label_enc_tooltip = Wählen Sie hier das Dropbox Verzeichnis aus.
+    settab_label_gpg_tooltip =
+    settab_label_key1_tooltip = Geben Sie hier ein Passwort ein mit dem die Dateien verschlüsselt werden sollen.
+    settab_label_key2_tooltip = Geben Sie hier ihr Passwort erneut ein.
+
+    # buttons
+    settab_button_clear = Auswählen
+    settab_button_enc = Auswählen
+    settab_button_gpg = Auswählen
+    settab_button_key1 = Anzeigen
+    settab_button_key2 = Anzeigen
+    settab_button_write_config = Schreibe Konfigurationsdatei
+
+    # button tooltips
+    settab_button_clear_tooltip = Öffnet einen Assistenten der es Ihnen ermöglicht das Klartext Verzeichnis auszuwählen
+    settab_button_enc_tooltip = Öffnet einen Assistenten der es Ihnen ermöglicht das Dropbox Verzeichnis auszuwählen
+    settab_button_gpg_tooltip =
+    settab_button_key1_tooltip = Drücke diesen Button, um das eingegebene Passwort anzuzeigen, sobald der Button wieder losgelassen wird, wird auch das Passwort wieder versteckt.
+    settab_button_key2_tooltip = Drücke diesen Button, um das eingegebene Passwort anzuzeigen, sobald der Button wieder losgelassen wird, wird auch das Passwort wieder versteckt.
+    settab_button_write_tooltip =
+
+    # checkboxes
+    settab_checkbox_advanced_settings = Erweiterte Einstellungen zeigen
+    settab_checkbox_verbose_tooltips = Tooltips anzeigen
+
+    # checkbox tooltips
+    settab_checkbox_advanced_settings_tooltip = Den Tab für die erweiterten Einstellungen anzeigen bzw. verstecken.
+    settab_checkbox_verbose_tooltips_tooltip = Die Tooltips für die Bedienelemente an oder abschalten
+
+        # the sub layout for the slider
+        settab_label_left_slider = Halt
+        settab_label_left_slider_tooltip = Halten Sie das Programm an
+        settab_label_right_slider = Start
+        settab_label_right_slider_tooltip = Starten Sie das Programm
+
+# the advanced settings tab
+
+    # buttons
+    advtab_button_new = Neu
+    advtab_button_delete = Einstellung löschen
+    advtab_button_delete_all = Alle Einstellungen löschen
+    advtab_button_reset_all = Zurücksetzen
+
+    # button tooltips
+    advtab_button_new_tooltip = Eine neuen Einstellung hinzufügen.
+    advtab_button_delete_tooltip = Löschen Sie die marktierte Einstellung
+    advtab_button_delete_all_tooltip = Alle Einstellungen löschen.
+    advtab_button_reset_all_tooltip = Alle Einstellungen auf den Standardwert zurücksetzen.
+
+# the key management tab
+
+    # buttons
+    key_tab_button_new = Neu
+    key_tab_button_edit = Editieren
+    key_tab_button_delete = Löschen
+    key_tab_button_import = Importieren
+    key_tab_button_export = Exportieren
+
+    # button tooltips
+    key_tab_button_new_tooltip = 
+    key_tab_button_edit_tooltip = 
+    key_tab_button_delete_tooltip = 
+    key_tab_button_import_tooltip =
+    key_tab_button_export_tooltip =
+
+    # drop down box
+    key_tab_combobox = 
+
+    # drop down box tooltip
+    key_tab_combobox_tooltip = 
+
+    # scroll area
+    key_scroll_column_key = 
+
+# the user and group management tab
+
+    # buttons
+    ug_tab_button_new = Neu
+    ug_tab_button_delete = Löschen
+    ug_tab_button_edit = Editieren
+
+    # button tooltips
+    ug_tab_button_new_tooltip = 
+    ug_tab_button_delete_tooltip = 
+    ug_tab_button_edit_tooltip = 
+
+    # drop down box
+    ug_tab_combobox = 
+
+    # drop down tooltip
+    ug_tab_combobox_tooltip = 
+
+    # labels
+    user_label_left_by_user = 
+    user_label_left_by_group = 
+    user_label_middle_by_user = 
+    user_label_middle_by_group = 
+    user_label_right_by_user = 
+    user_label_right_by_group = 
+
+    # label tooltips
+    user_label_left_by_user_tooltip = 
+    user_label_left_by_group_tooltip = 
+    user_label_middle_by_user_tooltip = 
+    user_label_middle_by_group_tooltip = 
+    user_label_right_by_user_tooltip = 
+    user_label_right_by_group_tooltip = 
+
+    # arrows
+    ug_tab_button_arrow_ltr = ->
+    ug_tab_button_arrow_rtl = <-
+
+    # arrow tooltips
+    ug_tab_button_arrow_ltr_tooltip = 
+    ug_tab_button_arrow_rtl_tooltip = 
+
+# menu bar
+
+help_menu_title = Hilfe
+help_menu_action = Hilfe anzeigen
+
+# Error messages
+passwords_not_equal = Die eingegebenen Passworter stimmer nicht überein
+password_not_correct = Das eingegebene Passwort ist falsch
+cloud_folder_not_exist = Der Ordner für die Cloud existiert nicht
+source_folder_not_exist = Der Ordner für ihre Klartext-Dateien existiert nicht
+
+# Wizards
+
+    value = Wert
+    option = Option
+
+    # option wizard:
+    option_wizard_title = Option hinzufügen
+    wizard_key_label = Option
+    wizard_key_input =
+    wizard_value_label = Wert
+    wizard_value_input =
+    wizard_button_confirm = OK

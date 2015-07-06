@@ -1,0 +1,163 @@
+# the title of the main window
+title = CloudCrypt
+
+# the labels of the tabs
+settings_title = Settings
+advanced_title = Advanced Settings
+key_title = Key management
+user_title = User and group management
+exit_cloudcrypt = Are you sure to quit CloudCrypt?
+writing_config = Writing config to configuration file...
+password_1_policy_violation = The first password does not meet the security policy.
+password_2_policy_violation = The second password does not meet the security policy.
+
+# the settings tab
+
+    # labels
+    settab_label_clear = Plain data directory
+    settab_label_enc = Encrypted directory
+    settab_label_gpg = GPG keyring
+    settab_label_key1 = Password
+    settab_label_key2 = Repeat password
+
+    # label tooltips
+    settab_label_clear_tooltip = Choose the directory where you want to save your unencrypted data in order to automatically encrypted and upload it.
+    settab_label_enc_tooltip = Choose your cloud folder here.
+    settab_label_gpg_tooltip =
+    settab_label_key1_tooltip = Insert your password for encryption.
+    settab_label_key2_tooltip = Insert your password again in order to verify it.
+
+    # buttons
+    settab_button_clear = Choose
+    settab_button_enc = Choose
+    settab_button_gpg = Choose
+    settab_button_key1 = Show
+    settab_button_key2 = Show
+    settab_button_write_config = Write config file
+
+    # button tooltips
+    settab_button_clear_tooltip = Shows a wizard in which you can choose the plain data directory.
+    settab_button_enc_tooltip = Shows a wizard in which you can choose your cloud folder.
+    settab_button_gpg_tooltip =
+    settab_button_key1_tooltip = Press this button to show your password. After releasing the button the password will be hidden again.
+    settab_button_key2_tooltip = Press this button to show your password. After releasing the button the password will be hidden again.
+    settab_button_write_tooltip =
+
+    # checkboxes
+    settab_checkbox_advanced_settings = Show advanced settings
+    settab_checkbox_verbose_tooltips = Show tooltips
+
+    # checkbox tooltips
+    settab_checkbox_advanced_settings_tooltip = Shows/Hides the tab for advanced settings
+    settab_checkbox_verbose_tooltips_tooltip = Show/Hide tooltips on the graphical elements
+
+        # the sub layout for the slider
+        settab_label_left_slider = Stop
+        settab_label_left_slider_tooltip = Stop the synchronization
+        settab_label_right_slider = Start
+        settab_label_right_slider_tooltip = Start the synchronization
+
+# the advanced settings tab
+
+    # buttons
+    advtab_button_new = New
+    advtab_button_delete = Delete setting
+    advtab_button_delete_all = Delete all settings
+    advtab_button_reset_all = Reset
+
+    # button tooltips
+    advtab_button_new_tooltip = Insert a new option.
+    advtab_button_delete_tooltip = Delete the chosen option.
+    advtab_button_delete_tooltip = Delete all settings.
+    advtab_button_reset_tooltip = Reset all settings to default values.
+
+# the key management tab
+
+    # buttons
+    key_tab_button_new = New
+    key_tab_button_edit = Edit
+    key_tab_button_delete = Delete
+    key_tab_button_import = Import
+    key_tab_button_export = Export
+
+    # button tooltips
+    key_tab_button_new_tooltip =
+    key_tab_button_edit_tooltip =
+    key_tab_button_delete_tooltip =
+    key_tab_button_import_tooltip =
+    key_tab_button_export_tooltip =
+
+    # drop down box
+    key_tab_combobox =
+
+    # drop down box tooltip
+    key_tab_combobox_tooltip =
+
+    # scroll area
+    key_scroll_column_key =
+
+# the user and group management tab
+
+    # buttons
+    ug_tab_button_new = New
+    ug_tab_button_delete = Delete
+    ug_tab_button_edit = Edit
+
+    # button tooltips
+    ug_tab_button_new_tooltip =
+    ug_tab_button_delete_tooltip =
+    ug_tab_button_edit_tooltip =
+
+    # drop down box
+    ug_tab_combobox =
+
+    # drop down tooltip
+    ug_tab_combobox_tooltip =
+
+    # labels
+    user_label_left_by_user =
+    user_label_left_by_group =
+    user_label_middle_by_user =
+    user_label_middle_by_group =
+    user_label_right_by_user =
+    user_label_right_by_group =
+
+    # label tooltips
+    user_label_left_by_user_tooltip =
+    user_label_left_by_group_tooltip =
+    user_label_middle_by_user_tooltip =
+    user_label_middle_by_group_tooltip =
+    user_label_right_by_user_tooltip =
+    user_label_right_by_group_tooltip =
+
+    # arrows
+    ug_tab_button_arrow_ltr = ->
+    ug_tab_button_arrow_rtl = <-
+
+    # arrow tooltips
+    ug_tab_button_arrow_ltr_tooltip =
+    ug_tab_button_arrow_rtl_tooltip =
+
+# menu bar
+
+help_menu_title = Help
+help_menu_action = Show help
+
+# Error messages
+passwords_not_equal = The passwords do not match.
+password_not_correct = The inserted password is wrong.
+cloud_folder_not_exist = The cloud folder does not exist.
+source_folder_not_exist = The directory for the plain data does not exist.
+
+# Wizards
+
+    value = Value
+    option = Option
+
+    # option wizard:
+    option_wizard_title = Add option
+    wizard_key_label = Option
+    wizard_key_input =
+    wizard_value_label = Value
+    wizard_value_input =
+    wizard_button_confirm = OK
